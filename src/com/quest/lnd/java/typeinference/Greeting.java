@@ -1,4 +1,4 @@
-package com.quest.lnd.java.type;
+package com.quest.lnd.java.typeinference;
 
 public interface Greeting {
 

@@ -1,4 +1,4 @@
-package com.quest.lnd.java.type;
+package com.quest.lnd.java.typeinference;
 
 public class Main {
 
@@ -23,7 +23,7 @@ public class Main {
 
     public static void printLambda(StringLengthLambda l)
     {
-        System.out.println(l.getLength());
+        System.out.println(l.getLength("Hello World"));
     }
 
     interface StringLengthLambda{
