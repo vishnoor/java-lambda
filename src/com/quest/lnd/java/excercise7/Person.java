@@ -1,4 +1,4 @@
-package com.quest.lnd.java.excercise2;
+package com.quest.lnd.java.excercise7;
 
 public class Person {
 

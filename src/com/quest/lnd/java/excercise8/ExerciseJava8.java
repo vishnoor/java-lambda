@@ -1,4 +1,4 @@
-package com.quest.lnd.java.excercise2;
+package com.quest.lnd.java.excercise8;
 
 import java.util.Arrays;
 import java.util.List;
