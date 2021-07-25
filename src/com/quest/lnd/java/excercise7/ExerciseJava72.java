@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 
 
-public class ExerciseJava7 {
+public class ExerciseJava72 {
 
     public static void main(String[] args)
     {
@@ -32,19 +32,20 @@ public class ExerciseJava7 {
 
         //3. Create a method that prints all elements with last name as 'C'
         System.out.println("\nPrinting All People with lastName C");
-        printAllWithLastNameC(people);
+        printAllWithCondition(people, new Condition() {
+            @Override
+            public boolean test(Person p) {
+                return p.getLastName().startsWith("C");
+            }
+        });
 
         System.out.println("\nPrinting All People with firstName C");
-        printAllWithFirstNameC(people);
-    }
-
-    private static void printAllWithLastNameC(List<Person> people) {
-        for(Person person : people)
-        {
-            if (person.getLastName().startsWith("C")) {
-                System.out.println(person);
+        printAllWithCondition(people, new Condition() {
+            @Override
+            public boolean test(Person p) {
+                return p.getFirstName().startsWith("C");
             }
-        }
+        });
     }
 
     private static void printAll(List<Person> people) {
@@ -54,14 +55,17 @@ public class ExerciseJava7 {
         }
     }
 
-    private static void printAllWithFirstNameC(List<Person> people) {
+    private static void printAllWithCondition(List<Person> people, Condition condition) {
         for(Person person : people)
         {
-            if (person.getFirstName().startsWith("C")) {
+            if (condition.test(person)) {
                 System.out.println(person);
             }
         }
     }
+}
 
-
+//Ideally should be in own file
+interface Condition {
+    boolean test(Person p);
 }
