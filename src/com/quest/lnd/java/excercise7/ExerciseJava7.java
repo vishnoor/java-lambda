@@ -14,12 +14,11 @@ public class ExerciseJava7 {
                 new Person("Charlotte", "Bronte", 45),
                 new Person("Mathew", "Arnold", 39)
         );
+
+        //1. Sort list by Last Name;
+
+        //2. Create a method that prints all elements in the list
+
+        //3. Create a method that prints all elements with last name as 'C'
     }
-
-    //1. Sort list by Last Name;
-
-    //2. Create a method that prints all elements in the list
-
-    //3. Create a method that prints all elements with last name as 'C'
-
 }
