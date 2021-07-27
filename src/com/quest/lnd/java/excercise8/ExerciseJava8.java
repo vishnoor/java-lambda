@@ -22,4 +22,6 @@ public class ExerciseJava8 {
 
     //3. Create a method that prints all elements with last name as 'C'
 
+    //4. Create a method that prints all elements with first name as 'C'
+
 }

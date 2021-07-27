@@ -20,5 +20,7 @@ public class ExerciseJava7 {
         //2. Create a method that prints all elements in the list
 
         //3. Create a method that prints all elements with last name as 'C'
+
+        //4. Create a method that prints all elements with first name as 'C'
     }
 }
